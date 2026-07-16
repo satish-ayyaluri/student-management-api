@@ -1,8 +1,6 @@
-# student-management-api
+# Student Management API 🚀
 
-
-
-A REST API built using **FastAPI** and **SQLAlchemy** for managing student records. This project demonstrates backend development concepts including API creation, database integration, CRUD operations, and request validation.
+A REST API built using **FastAPI** and **SQLAlchemy** for managing student records. This project demonstrates backend development concepts including REST API design, database integration, CRUD operations, and API validation.
 
 ## 🚀 Features
 
@@ -11,54 +9,57 @@ A REST API built using **FastAPI** and **SQLAlchemy** for managing student recor
 * Retrieve student by ID
 * Update student details
 * Delete student records
-* Interactive API documentation using Swagger UI
 * SQLite database integration
 * Data validation using Pydantic
+* Interactive API documentation using Swagger UI
 
 ## 🛠️ Tech Stack
 
-* **Python**
-* **FastAPI** - Web framework for building REST APIs
-* **SQLAlchemy** - ORM for database operations
-* **Pydantic** - Data validation
-* **SQLite** - Database
-* **Uvicorn** - ASGI server
+* Python
+* FastAPI
+* SQLAlchemy
+* Pydantic
+* SQLite
+* Uvicorn
 
 ## 📂 Project Structure
 
-```
+```text
 student-management-api/
-│
-├── main.py          # FastAPI application and API routes
-├── database.py      # Database connection configuration
-├── models.py        # SQLAlchemy database models
-├── schemas.py       # Pydantic request/response schemas
-├── crud.py          # Database CRUD operations
-├── requirements.txt # Project dependencies
-└── README.md        # Project documentation
+
+├── main.py              # FastAPI application and routes
+├── database.py          # Database connection setup
+├── models.py            # SQLAlchemy database models
+├── schemas.py           # Pydantic schemas
+├── crud.py              # CRUD database operations
+├── requirements.txt     # Dependencies
+├── README.md            # Documentation
+└── screenshots/
+    ├── swagger.png
+    └── create-student.png
 ```
 
 ## ⚙️ Installation and Setup
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/student-management-api.git
+git clone https://github.com/satish-ayyaluri/student-management-api.git
 ```
 
-### 2. Navigate into the project folder
+### Navigate to the project
 
 ```bash
 cd student-management-api
 ```
 
-### 3. Create a virtual environment
+### Create virtual environment
 
 ```bash
 python -m venv .venv
 ```
 
-### 4. Activate virtual environment
+### Activate virtual environment
 
 Windows:
 
@@ -66,7 +67,7 @@ Windows:
 .venv\Scripts\activate
 ```
 
-### 5. Install dependencies
+### Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -80,7 +81,7 @@ Start the FastAPI server:
 python -m uvicorn main:app --reload
 ```
 
-The API will run at:
+API will run at:
 
 ```
 http://127.0.0.1:8000
@@ -88,23 +89,31 @@ http://127.0.0.1:8000
 
 ## 📖 API Documentation
 
-FastAPI automatically provides interactive documentation:
-
-Swagger UI:
+FastAPI provides interactive Swagger documentation:
 
 ```
 http://127.0.0.1:8000/docs
 ```
 
+## 📸 Screenshots
+
+### Swagger API Documentation
+
+![Swagger API Documentation](screenshots/swagger.png)
+
+### Create Student API Response
+
+![Create Student Response](screenshots/create-student.png)
+
 ## 🔗 API Endpoints
 
-| Method | Endpoint                 | Description          |
-| ------ | ------------------------ | -------------------- |
-| POST   | `/students`              | Create a new student |
-| GET    | `/students`              | Get all students     |
-| GET    | `/students/{student_id}` | Get student by ID    |
-| PUT    | `/students/{student_id}` | Update student       |
-| DELETE | `/students/{student_id}` | Delete student       |
+| Method | Endpoint                 | Description       |
+| ------ | ------------------------ | ----------------- |
+| POST   | `/students`              | Create a student  |
+| GET    | `/students`              | Get all students  |
+| GET    | `/students/{student_id}` | Get student by ID |
+| PUT    | `/students/{student_id}` | Update student    |
+| DELETE | `/students/{student_id}` | Delete student    |
 
 ## 📌 Example Request
 
@@ -118,7 +127,7 @@ http://127.0.0.1:8000/docs
 }
 ```
 
-### Response
+### Example Response
 
 ```json
 {
@@ -134,13 +143,14 @@ http://127.0.0.1:8000/docs
 Through this project, I learned:
 
 * Building REST APIs with FastAPI
-* Working with databases using SQLAlchemy
-* Designing CRUD operations
-* API testing using Swagger UI
-* Structuring a Python backend application
+* Creating CRUD operations
+* Working with SQLAlchemy ORM
+* Connecting APIs with databases
+* Testing APIs using Swagger UI
+* Structuring a Python backend project
 
 ## 👨‍💻 Author
 
-Ayyaluri Satish Kumar Reddy
+**Ayyaluri Satish Kumar Reddy**
 
 GitHub: https://github.com/satish-ayyaluri
